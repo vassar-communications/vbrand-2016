@@ -1,0 +1,321 @@
+
+/*	Fonts
+	===== */
+
+@import url(https://use.typekit.net/dil2ydr.css);
+
+@font-face {
+    font-display:swap;
+    font-family:'Source Sans Variable';
+    font-weight:200 900;
+    font-stretch:normal;
+    src:url(../fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2 supports variations"),url(../fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2-variations"),url(../fonts/SourceSansVariable-Roman.ttf.woff) format("woff"),url(/../fonts/SourceSansVariable-Roman.ttf) format("truetype")
+}
+@font-face {
+    font-display:swap;
+    font-family:'Source Sans Variable';
+    font-weight:200 900;
+    font-style:italic;
+    font-stretch:normal;
+    src:url(../fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2 supports variations"),url(../fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2-variations"),url(../fonts/SourceSansVariable-Italic.ttf.woff) format("woff"),url(/../fonts/SourceSansVariable-Italic.ttf) format("truetype")
+}
+
+
+/*	All variables
+	============= */
+
+:root {
+	--darkBurgundy: #641A2B;
+	--lightBurgundy: #951829;
+	--red: #f00;
+	--gold: #C6AA76;
+
+
+	--serif-display: freight-big-pro, serif;
+	--sans-serif: 'Source Sans Variable', sans-serif;
+	--sans-serif-verycondensed: acumin-pro-extra-condensed, sans-serif;
+}
+
+body {
+	background: var(--darkBurgundy) !important;
+}
+
+
+@import "_dropdowns";
+@import "_sites/_all";
+
+
+/*	Vassar masthead
+	=============== */
+
+.g-Masthead__vassar {
+	display: block;
+	padding: 2em 2em 0;
+}
+.g-Masthead__vassar svg {
+	width: 12em;
+}
+.g-Masthead__vassar svg path {
+	fill: #fff;
+	transition: 0.3s all ease;
+}
+.g-Masthead__vassar .g-Masthead__vassar--link:hover path {
+	fill: #f00;
+}
+
+
+/*	Links and navigation
+	==================== */
+
+a {
+	transition: 0.2s all ease;
+	transition-property: color, background;
+}
+.menu-item a {
+    font-family: var(--sans-serif);
+	font-size: 1.04em;
+}
+
+
+
+/*	Basic typography
+	================ */
+
+body,
+.sidebar,
+.widget-area {
+    font-family: var(--sans-serif);
+}
+p, li, dd, dt {
+    font-family: var(--sans-serif) !important;
+	font-variation-settings: "wght" 360;
+}
+p {
+    font-size: 1.2em !important;
+    font-variation-settings: "wght" 360;
+    line-height: 1.5 !important;
+}
+.u-lMain h3 {
+	font-family: var(--sans-serif);
+	letter-spacing: -0.014em;
+	font-size: 1.7em;
+	font-weight: 700;
+}
+h3, h4, h5, h6 {
+	font-family: var(--sans-serif);
+}
+h4 {
+	font-size: 1.1em;
+}
+h2:first-of-type,
+h3:first-of-type,
+h4:first-of-type {
+    margin-top: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.4em 0 0.4em 0;
+}
+
+
+
+.Module__header {
+	text-transform: none !important;
+}
+
+/*	Site "furniture"
+	================
+	
+	This refers to constant elements of the template - header, footer. (Nav is not
+	covered here; it's under links.
+*/
+
+/*	Main site title
+	--------------- */
+
+.u-pageTitle,
+.entry-title,
+.u-pageTitle .maintitle {
+	font-family: var(--serif-display) !important;
+	font-weight: bold !important;
+	font-size: 4em !important;
+    color: var(--darkBurgundy) !important;
+    background: -o-linear-gradient(315deg, var(--darkBurgundy) 0%, var(--red) 70%);
+    background: linear-gradient(135deg, var(--darkBurgundy) 0%, var(--red) 70%);
+    -webkit-background-clip: text;
+    color: transparent !important;
+    display: inline-block !important;
+    margin-bottom: 0.3em !important;
+}
+.u-pageTitle .maintitle {
+	font-size: 1em !important;
+}
+
+
+
+
+/*	Thematic elements
+	================= */
+
+body, p, li {
+    color: #454545 !important;
+}
+
+
+
+.site-header .site-title {
+    font-family: var(--sans-serif-verycondensed) !important;
+    font-size: 5em !important;
+    font-weight: 100 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 0.94 !important;
+    padding-bottom: 0.4em !important;
+}
+
+@media screen and (min-width: 61.5625em) {
+	.site-header {
+	    padding: 2.25em 4.5455%;
+	}
+}
+
+
+.entry-footer {
+    font-family: var(--sans-serif) !important;
+    font-size: 1em !important;
+}
+.entry-content h2,
+.entry-summary h2,
+.comment-content h2 {
+    color: #641A2B;
+    background: -o-linear-gradient(315deg, #641A2B 0%, #ed1c24 70%);
+    background: linear-gradient(135deg, #641A2B 0%, #ed1c24 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+	font: var(--serif-display);
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 0.92;
+    margin-bottom: 0.8em;
+    margin-top: 0.2em;
+    padding-bottom: 0.2em;
+    position: relative;
+}
+
+
+.site-description {
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+
+#globalfooter a,
+#globalfooter a:visited {
+	color: #fff;
+}
+#globalfooter a:hover,
+#globalfooter a:visited:hover {
+	color: #f00;
+}
+
+
+/*	Other
+	===== */
+
+/*	Widgets
+	------- */
+
+.widget {
+	font-size: 1em !important;
+}	
+.widget-title {
+    font-family: var(--sans-serif) !important;
+}
+
+
+
+/*	SPECIFIC SCENARIOS
+	================== */
+
+/*	Gamut
+	----- */
+
+@font-face{font-display:swap;font-family:'Source Sans Variable';font-weight:200 900;font-stretch:normal;src:url(/assets/fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2 supports variations"),url(/assets/fonts/SourceSansVariable-Roman.ttf.woff2) format("woff2-variations"),url(/assets/fonts/SourceSansVariable-Roman.ttf.woff) format("woff"),url(/assets/fonts/SourceSansVariable-Roman.ttf) format("truetype")}@font-face{font-display:swap;font-family:'Source Sans Variable';font-weight:200 900;font-style:italic;font-stretch:normal;src:url(/assets/fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2 supports variations"),url(/assets/fonts/SourceSansVariable-Italic.ttf.woff2) format("woff2-variations"),url(/assets/fonts/SourceSansVariable-Italic.ttf.woff) format("woff"),url(/assets/fonts/SourceSansVariable-Italic.ttf) format("truetype")}
+
+.u-pageInner {
+	* {
+		font-family: var(--sans-serif);
+	}
+}
+.u-pageTitle {
+	padding-bottom: 0.2em;
+}
+
+
+
+
+/*	Twenty Sixteen-specific
+	----------------------- */
+
+.twenty-sixteen body {
+	background-image: linear-gradient(to bottom, var(--darkBurgundy) 0%, var(--lightBurgundy) 100%) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.twenty-sixteen body:before,
+.twenty-sixteen body:after {
+    display: none !important;
+}
+
+
+
+.site-info {
+    font-family: var(--sans-serif) !important;
+}
+
+/*	Nav
+	--- */
+
+.site-inner a,
+.site-inner a:visited {
+    color: var(--lightBurgundy);
+}
+.site-inner a:hover,
+.site-inner a:visited:hover,
+.main-navigation li > a:hover,
+.main-navigation li > a:focus {
+    color: var(--red) !important;
+}
+li .sub-menu .menu-item a:hover {
+    background: var(--gold) !important;
+    color: #fff !important;
+}
+
+@media screen and (min-width: 56.875em) {
+    .main-navigation ul ul li {
+        background-color: #fff !important;
+        border: 1px solid var(--gold) !important;
+        border-bottom-color: var(--gold) !important;
+        border-bottom-width: 0 !important;
+		margin-top: -1px !important;
+    }
+	.main-navigation li:hover > a,
+	.main-navigation li.focus > a {
+	    color: var(--lightBurgundy) !important;
+	}
+}
+
+.main-navigation *[class*=current] {
+	background: var(--darkBurgundy) !important;
+	
+	a {
+		color: #fff !important;		
+	}
+}
+
+
+
+
+
+
+
+

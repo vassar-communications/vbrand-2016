@@ -1,0 +1,57 @@
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+details {
+	transition: 0.4s all ease;
+
+	summary {
+		position: relative;
+
+	    &:before {
+		    position: absolute;
+		    margin-left: -0.6em;
+		    -webkit-text-stroke: 1px;
+		    position: absolute;
+		    content: "+";
+		    font-weight: normal;
+		    transition: 0.4s all ease;
+	    }
+	}
+
+	&[open] {
+		summary {
+			&:before,
+			&:after {
+		    transform: rotate(45deg) scale(1.1);
+			}
+		}
+	}
+	summary {
+		display: block;
+		margin-bottom: 1em;
+		transition: 0.4s all ease;
+
+		& ~ * {
+			animation: sweep .5s ease-in-out;
+		}
+		&:focus {
+			color: #f00;
+//			outline: none;
+		}
+		&::-webkit-details-marker {
+			display: none;
+		}
+	}
+}
+
+

@@ -1,0 +1,114 @@
+.u-NavSite__item {
+	font-family: var(--sans-serif) !important;
+}
+.u-lContent {
+	li {
+		font-variation-settings: "wght" 360;
+
+		p {
+			font-size: 1em !important;
+		}
+	}
+
+	summary {
+		color: #951829;
+		
+		&:hover {
+			color: #f00 !important;
+		}		
+	}
+}
+
+.u-lContent,
+.u-lFooter {
+	a, a:link, a:visited {
+		color: #951829 !important;
+	    background: none !important;
+	    text-decoration: underline !important;
+	    text-shadow: none;
+	}
+	a:hover, a:visited:hover {
+		color: #f00 !important;
+	}
+	a:visited {
+		color: #63666A !important;
+	}
+}
+
+.u-VCard__url, .u-VCard__item--building, .u-VCard__item--tel, .u-VCard__item--fax, .u-List__item--admissions, .u-List__item--infoSite, .u-List__item--college__name {
+	color: #951829 !important;
+	
+	&:hover {
+		color: #f00 !important;
+	}
+}
+
+.u-VCard__url:visited,
+.u-VCard__item--building:visited,
+.u-VCard__item--tel:visited,
+.u-VCard__item--fax:visited,
+.u-List__item--admissions:visited,
+.u-List__item--infoSite:visited,
+.u-List__item--college__name:visited {
+	color: #63666A !important;
+}
+
+
+.u-NavSite__item,
+.u-NavSite__item:visited {
+    color: var(--darkBurgundy) !important;
+}
+.u-NavSite__item:hover,
+.u-NavSite__item:visited:hover {
+	color: #f00 !important;
+}
+
+
+
+svg path[fill="#CC2249"] {
+    fill: #951829;
+}
+a:hover svg path[fill="#CC2249"] {
+    fill: #f00;
+}
+
+
+details {
+	summary {
+		font-size: 1.2em;
+	}
+}
+.Module__desc {
+	font-weight: 400;
+}
+
+
+.u-Masthead__siteName--link * {
+    transition: 0.4s color ease;
+}
+.u-Masthead__siteName--link:hover * {
+    color: #f00 !important;
+}
+.Module__header {
+    font-family: var(--sans-serif) !important;
+    font-size: 1.2em !important;
+    margin-bottom: 0.4em !important;
+}
+
+
+.u-VCard__url {
+	text-decoration: none !important;
+	font-family: var(--serif-display) !important;
+    font-size: 1.3em !important;
+    text-transform: none;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.2em;
+}
+
+
+.u-VCard--site .u-VCard__item,
+.u-VCard--site .u-VCard__info,
+.u-VCard--site .u-List--site,
+.u-VCard--site .u-List__item {
+    font-family: var(--sans-serif) !important;	
+}
